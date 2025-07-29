@@ -1,0 +1,32 @@
+/* 6 - Crie um arquivo de estilo dentro de um diretório chamado css.
+6.1 - Link o arquivo em todas as páginas.
+6.2 - Mude a cor dos filmes que estreiam hoje para darkred.
+6.3 - Mude a cor dos filmes que estreiam amanhã para darkblue.
+6.4 - Remova o sublinhado de todos os links do site.
+6.5 - Mude a cor dos links que estão dentro do título de nível 2 para seagreen.
+6.6 - Aumente a fonte dos parágrafos para 20px.
+6.7 - Mude a família da fonte de todo o site para Arial. --> */
+
+a {
+    text-decoration: none;
+}
+
+.hoje {
+    color: darkred;
+}
+
+.amanha { 
+    color: darkblue;
+}
+
+h2 a {
+    color: seagreen;
+}
+
+p {
+    font-size: 20px;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}

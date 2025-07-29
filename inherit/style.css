@@ -1,0 +1,8 @@
+body {
+    color: tomato;
+}
+
+/* link tem uma cor padrão, logo para mudar a sua cor precisa selecionar ele ou mudar a color para o  valor de herança inherit o button é a mesma coisa. */
+a {
+    color: inherit;
+}
