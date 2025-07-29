@@ -1,0 +1,19 @@
+div {
+    background: #aaa;
+    width: 140px; /* no width somou os 140px do width com mais 30px padding da direita (right) e da esquerda (left), logo 140px + 30 px + 30px + 10px + 10px = 220px */
+    height: 80px; /* o mesmo acontece no height, logo 80px + 30px + 30px + 10px + 10px = 160px */
+    padding: 30px; /* espaço entre o conteúdo e a borda */
+    border: 10px solid #111;  
+    margin: 30px;
+}
+
+body {
+    margin: 0; /* body por padrão tem margem de 8px*/
+}
+
+h1 {
+    background: #84e;
+    padding: 20px;
+    border: 4px solid #111;
+    margin: 40px; /* a margin não soma, logo a maior sobrepoem a outra, no caso 40px é maio que 30px, por isso ela prevalece */
+}
