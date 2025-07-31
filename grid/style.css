@@ -17,7 +17,14 @@ h1 {
 .item {
     background: #f7f7f7;
     border: 1px solid #e7e7e7;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     padding: 20px;
     border-radius: 4px;
+    display: grid;
+}
+
+.grid {
+    display: grid; /*layout da página e seus elementos, define um espaçamento (margem) único entre os elementos*/
+    grid-template-columns: 1fr 1fr; /*separa de forma fracionária, não gerando barra no navegador.*/
+    gap: 20px; /*define espaço dentro o grid*/
 }
