@@ -24,7 +24,14 @@ h1 {
 }
 
 .grid {
-    display: grid; /*layout da página e seus elementos, define um espaçamento (margem) único entre os elementos*/
-    grid-template-columns: 1fr 1fr; /*separa de forma fracionária, não gerando barra no navegador.*/
+    display: grid; /*layout da página e seus elementos, define um espaçamento (margem) único entre os elementos, ou seja transforma o elemento em um grid container*/
+    /* grid-template-columns: 1fr 1fr; separa de forma fracionária ou seja força a distribuição do espaço em branco, não gerando barra no navegador. */
+    height: 800px;
+    grid-template-columns: auto auto; /*auto tenta fazer o conteúdo caiba o máximo possível, ou seja a largura do conteúdo vai ser automática  de acordo com o tamanho do conteúdo*/
     gap: 20px; /*define espaço dentro o grid*/
+        
+    /* align-content: space-evenly; alinha na vertical, mas só alinha na verticial se tiver espaço  */
+    /* justify-content: space-evenly; alinhamento horizontal, justify não funciona no fr, mas funciona no auto */
+    place-content: start; /*é um atalho para o align-content e justify-content*/
+   
 }
