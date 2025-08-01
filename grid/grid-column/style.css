@@ -1,0 +1,57 @@
+.grid {
+    display: grid; /*os elementos se tornam itens de grid e pegam todo espaçamento do grid*/
+    gap: 20px; /*espaçamento (margem) de elementos dentro do grid*/
+    grid-template-columns: 1fr 1fr 1fr 1fr; /*cria a colunas no grid*/
+}
+
+.foto {
+    grid-column: span 3; /*movimenta o elemento para a coluna 2*/
+    /*span expande dus colunas*/
+}
+
+.descricao {
+    grid-column: 1 / 3;
+}
+
+.comprar {
+    grid-column: 1 / -1; /*o -1 significa que vai até a última coluna*/
+}
+
+/* Estilos Gerais */
+body {
+    font-family: arial;
+    margin: 40px;
+}
+h1, p {
+    margin: 0px;
+
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 1;
+}
+
+p, 
+span {
+    font-size: 20px;
+}
+img {
+    width: 100%;
+}
+
+.comprar {
+    background: #a8f;
+    color: #103;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+.preco {
+    background: #ddd;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
