@@ -1,0 +1,19 @@
+/* vh representa o tamanho da altura da tela visivel e vw tamanho da largura da tela visivel. A porcentagem é em relação ao elemento pai e não a tela visivel */
+
+body {
+    margin: 0px;
+}
+
+section {
+    width: 200px;
+    /* width: 100%; */
+    background: tomato;
+}
+
+div {
+    background: lightblue;
+    /* width: 50vw; */
+    width: 50%;
+    height: 200px;
+    /* height: 100vh; */
+}

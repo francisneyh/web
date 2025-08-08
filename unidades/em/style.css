@@ -1,0 +1,27 @@
+/* rem é a unidade relativa ao tamanho do elemento raiz html, onde 1rem = 16px, o rem é usado na acessibilidade pois quando muda o tamanho da fonte do navegador ele muda também, contudo a unidade pixel (px) não muda e ignora a mudança */
+
+a {
+    text-decoration: none;
+    color: white;
+    background: darkblue;
+    display: inline-block;
+}
+
+p {
+    background: lightblue;
+}
+
+.px {
+    font-size: 24px;
+    padding: 16px 32px;
+}
+
+html {
+    /* font-size: 32px; */ /*tamanho padrão do html é 16px*/
+    font-size: 200%; /* 200% é 2x 16px*/
+}
+
+.rem {
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+}
