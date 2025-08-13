@@ -1,0 +1,44 @@
+/* seleciona todos os elementos */
+.lista-1 li {
+    background: #fda;
+}
+
+/* seleciona o primeiro elemento, a importância é maior então mantém a cor */
+.lista-1 li:first-child { 
+    background: #caf;
+}
+
+/* seleciona o último elemento, a importância é maior então mantém a cor */
+.lista-1 li:last-child { 
+    background: #cfa;
+}
+
+/* seleciona um elemento em específico, a importância é maior então mantém a cor */
+.lista-1 li:nth-child(3) { 
+    background: #adf ;
+}
+
+/* seleciona os elementos pares (lista de zebra), a importância é maior então mantém a cor */
+.lista-1 li:nth-child(even) { 
+    background: lightcoral ;
+}
+
+/* seleciona os elementos de  3 em 3, de 4 em 4, etc, a importância é maior então mantém a cor */
+.lista-2 li:nth-child(2n) { 
+    background: lightblue;
+}
+
+/* seleciona os elementos ímpares, a importância é maior então mantém a cor */
+.lista-2 li:nth-child(odd) { 
+    background: #C0C0C0;
+}
+
+/* O :not nega a seleção de um elemento específico */
+.lista-3 li:not(:first-child, :last-child, .terceiro) {
+    background: #caf;
+}
+
+h2:not(.contato){
+    text-decoration: underline;
+}
+

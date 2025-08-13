@@ -1,0 +1,32 @@
+a {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-family: Arial;
+    text-decoration: none;    
+    background: #caf;
+    color: #217;
+}
+
+a:hover { /* ao passar o mouse em cima faz um efeito (mouse por cima) */
+    background: #adf;
+    color: #147;
+}
+
+a:focus { /* ao da tab ele foca os elementos que podem ser focados (ex: botões, links, formulários, etc), ou seja foca nos elementos que podem ser interagidos pelo usuário (clique do tab) */
+    background: #cfa;
+    color: #171;
+    /* outline: none; borda envolvendo o elemento, por padrão deixa a borda, não tire o outline */
+    /* border: 2px solid red; */
+}
+
+a:active { /* ao clicar no botão, o botão é ativado, active escreve por cima do focus quando clica no botão */
+    background: #ffa;
+    color: #761;
+}
+
+/* estilo do elemento muda quando o link foi visitado, escreve por cima de todos os demais, utilizado mais para lista de links que você precisa saber se já foram visitados */
+/* a:visited { 
+    background: #fda;
+    color: #731;
+} */
