@@ -1,0 +1,8 @@
+- tags semânticas.
+- tipografia para unidade rem.
+- svg de ondas como background no vantagem bikcraft.
+- mudar o estado dos elementos do menu de navegação ao passar o mouse por cima a borda fique vermelha.
+- mudar o estado do elemento do botão VER MAIS para que fique mais escuro ao passar o mouse.
+- colocar uma borda vermelha a esquerda dos elementos ao passar o mouse nos elementos: motor elétrico, 40km/h, rastreador.
+- pintar de cinza claro apenas ons ícones ímpares nos elementos: motor elétrico, 40km/h, rastreador.
+- substituir o elemento decorativo (risco) do html por um feito no css com pseudo elemento.
