@@ -30,12 +30,18 @@ p {
     line-height: 1.3;
 }
 
+nav li {
+    display: inline-block;
+    padding: 15px 20px;
+    margin: -12px;
+    justify-content: center;
+}
+
 .menu {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: center;
-    
+    justify-content: center;    
 }
 
 .menu a {
@@ -103,14 +109,16 @@ p {
 
 .vantagens {
     background: #fff;
-    padding: 40px;
+    /* padding: 40px; */
 }
 
 .vantagens-item {
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: auto 1fr; 
     gap: 10px 20px;
-    padding: 20px;  
+    /* padding: 20px;   */
+    padding: 40px 5px;
+    align-items: center;
 }
 
 .vantagens-item p {
@@ -121,14 +129,18 @@ p {
     border-left: red solid 4px;
 }
 
+.icones {
+    display: flex;
+    /* padding-right: -40px; */
+}
+
 ul {
     list-style: none;
-    padding: 0px;
+    margin: 0px;
 }
 
 .vantagens-item-impar li:nth-child(odd) {
-    background-color: #f7f7f7;
-    
+    background-color: #f7f7f7; 
 }
 
 .footer {
