@@ -17,12 +17,14 @@ a {
     text-decoration: none;
 }
 
-p, h1, h2, h2 {
+ul {
+    list-style: none;
     margin: 0px;
+    padding: 0px;
 }
 
-h1 {
-    font-size: 2rem;
+p, h1, h2, h2 {
+    margin: 0px;
 }
 
 p {
@@ -37,6 +39,12 @@ nav li {
     justify-content: center;
 }
 
+.header {
+    display: grid;
+    justify-items: center;
+    gap: 60px;
+}
+
 .menu {
     display: flex;
     flex-wrap: wrap;
@@ -45,15 +53,19 @@ nav li {
 }
 
 .menu a {
+    display: block;
     background: #ffffff;
-    padding: 15px 20px;
+    padding: 1rem 2rem;
     border-radius: 4px;
     color: #000000;
     text-transform: uppercase;
+    border: 2px solid #fff; /* Colocando a borda aqui para que não aumente o tamanho do link quando passar o mouse */
+    /* border: transparent; colocou a border aqui de branco (mesma cor do background) ou transparente, para que não fique pulando a tela, logo com a borda existindo ele não aumenta o tamanho só pinta */
 }
 
 .menu a:hover {
-    border: #e21 solid 2px;
+    /* border: #e21 solid 2px; só  pinta a borda de vermelho, não aumenta o tamanho pois ela já existe */
+    border-color: #e21;
 }
 
 .conteudo {
@@ -73,31 +85,23 @@ nav li {
     justify-items: end;
 }
 
+.introducao h1 {
+    font-size: 2rem;
+}
+
 .botao {
     background: #e21;
     color: #fff;
-    padding: 15px 30px;
+    padding: 1rem 2rem;
     border-radius: 4px;
     text-transform: uppercase;
 }
 
 .botao:hover {
-    background-color: #900;
-}
-
-.introducao::before {
-    content: "";
-    display: inline-block;
-    width: 60px;
-    height: 4px;
-    background: #e21;
-    align-items: center;
-    margin-right: -70px;
-    margin-top: -43px;
+    background: #900;
 }
 
 .subtitulo {
-    background-image: url("./img/onda.svg");
     font-size: 4rem;
     text-transform: uppercase;
     /* color: #c6c6c6; */
@@ -105,11 +109,13 @@ nav li {
     text-align: right;
     padding: 40px;
     align-self: center; /* alinha somente um item específico ao centro */
+    background-image: url("./img/onda.svg");
+    /* background-repeat: no-repeat; */
 }
 
 .vantagens {
     background: #fff;
-    /* padding: 40px; */
+    padding: 40px;
 }
 
 .vantagens-item {
@@ -119,27 +125,29 @@ nav li {
     /* padding: 20px;   */
     padding: 40px 5px;
     align-items: center;
+    border-left: transparent solid 4px; /* Colocando a borda aqui para que não aumente o tamanho do link quando passar o mouse */
+}
+
+.vantagens-item:hover {
+    /* border-left: #e21 solid 4px; */
+    border-color: #e21;
+}
+
+.introducao::before {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background: #e21;  
+    position: absolute;
+    top: 30px;
+    right: -30px;
 }
 
 .vantagens-item p {
     grid-column: 2; 
 } 
 
-.vantagens-hover:hover {
-    border-left: red solid 4px;
-}
-
-.icones {
-    display: flex;
-    /* padding-right: -40px; */
-}
-
-ul {
-    list-style: none;
-    margin: 0px;
-}
-
-.vantagens-item-impar li:nth-child(odd) {
+.vantagens-item:nth-child(odd) {
     background-color: #f7f7f7; 
 }
 
