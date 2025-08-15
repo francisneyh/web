@@ -1,1 +1,30 @@
-/* O max-width determina um valor máximo de largura do elemento. Pode ser usado % ou px */
+img { 
+    display: block;
+    max-width: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    max-width: 960px; /* Define a largura máxima do grid, com isso controla o tamanho o espaço que o container ocupa */
+    /* margin-right: auto; */ /* Para sempre centraliza/alinhar automaticamente o grid/conteúdo específico na tela, precisa defini margin-right: auto; e  margin-left: auto; */
+    /* margin-left: auto; */ /* Para sempre centraliza/alinhar automaticamente o grid/conteúdo específico na tela, precisa defini margin-right: auto; e  margin-left: auto; */
+   
+    margin: 100px auto; /* Mesma coisa que as duas linhas acima, onde 100px é para cima e para baixo e auto esquerda e direita */
+    
+}
+
+.cover img {
+    height: 100%;
+    object-fit: cover; /* Funciona como o background-size, não deixa distorcer a imagem e fica sempre na altura do texto */
+    object-position: top left; /* Posiciona a imagem no canto superior esquerdo , corta do topo para a esquerda */
+}
+
+.texto {
+    align-self: center;
+}
+
+p { 
+    max-width: 60ch; /* Unidade relacionada à largura do caractere 0 da tipografia. */
+}
