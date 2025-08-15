@@ -1,0 +1,20 @@
+img { 
+    display: block;
+    max-width: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.cover img {
+    height: 100%;
+    object-fit: cover; /* Funciona como o background-size, não deixa distorcer a imagem e fica sempre na altura do texto */
+    object-position: top left; /* Posiciona a imagem no canto superior esquerdo , corta do topo para a esquerda */
+}
+
+p { 
+    font-size: 1.5rem;
+}
