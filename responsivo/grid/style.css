@@ -1,0 +1,27 @@
+img {
+    display: block;
+    width: 100%;
+    margin: 5px;
+}
+
+div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* quebra para uma coluna (1fr) quando atinge 400px e com isso não cria um espaço vazio como no repeat(auto-fit, 400px) */
+    gap: 20px;
+}
+
+p {
+    font-size: 2rem;
+}
+
+@media (min-width: 400px) {
+   .minmax img {
+        /* grid-row: 2; */ /* Leitor de tela sempre vai pela do html e não pela ordem da imagem */
+        order: 2;
+    }
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+}
